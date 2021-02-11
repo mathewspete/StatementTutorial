@@ -20,7 +20,7 @@ namespace StatementTutorial {
 
             var ints = new[] { 77, 32, 94, 46, 28 };
             for(var idx=0; idx<ints.Length; idx++) {
-                Console.WriteLine($"|idx| is {idx} and |ints[idx]| is {ints[idx]}.");
+                Console.WriteLine($"idx is {idx} and ints[idx] is {ints[idx]}.");
             }
         }
     }
