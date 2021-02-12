@@ -19,9 +19,64 @@ namespace StatementTutorial {
 
 
             var ints = new[] { 77, 32, 94, 46, 28 };
-            for(var idx=0; idx<ints.Length; idx++) {
+            
+
+            for (var idx = 0; idx<ints.Length; idx++) {
                 Console.WriteLine($"idx is {idx} and ints[idx] is {ints[idx]}.");
             }
+
+            var ints1 = new[] { 20, 49, 94, 91, 64, 92, 26, 37, 45, 49 };
+            Console.WriteLine($"ints1 includes {ints1.Length} values.");
+            Console.WriteLine();
+
+            var SumE = 0;
+            var total1 = 0;
+            for(var idx = 0; idx<ints1.Length; idx++) {
+                Console.WriteLine($"inst1[{idx}] value is {ints1[idx]}." );
+                total1 += ints1[idx];
+                if (ints1[idx] % 2 == 0) {
+                    SumE += ints1[idx];
+                }
+
+            }
+            Console.WriteLine($"The sum of ints1 is {total1}.");
+            Console.WriteLine($"The sum of the even numbers is {SumE}");
+            Console.WriteLine();
+
+
+            var ints2 = new[] { 611, 589, 466, 792, 876, 752, 270, 166, 357 };
+            Console.WriteLine($"ints2 includes {ints2.Length} values.");
+            
+            SumE = 0;
+            var total2 = 0;
+            for (var idx = 0; idx < ints2.Length; idx++) {
+                Console.WriteLine($"inst2[{idx}] value is {ints2[idx]}.");
+                total2 += ints2[idx];
+                if (ints2[idx]%2!=0) {
+                    SumE += ints2[idx];}
+
+            }
+            Console.WriteLine($"The sum of ints2 is {total2}.");
+            Console.WriteLine($"The sum of the odd numbers is {SumE}");
+            Console.WriteLine();
+
+
+            var ints3 = new[] { 2155, 5622, 2974, 2563, 8201, 6627, 3380, 2551 };
+            Console.WriteLine($"ints3 includes {ints3.Length} values.");
+            
+            SumE = 0;
+            var total3 = 0;
+            for (var idx = 0; idx < ints3.Length; idx++) {
+                Console.WriteLine($"inst3[{idx}] value is {ints3[idx]}.");
+                total3 += ints3[idx];
+                if (ints3[idx]%2==0) {
+                    SumE += ints3[idx];}
+
+            }
+            Console.WriteLine($"The sum of ints3 is {total3}.");
+            Console.WriteLine($"The sum of the even numbers is {SumE}");
+            Console.WriteLine();
+
         }
     }
 }
