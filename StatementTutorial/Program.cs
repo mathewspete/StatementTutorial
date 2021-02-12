@@ -190,17 +190,37 @@ namespace StatementTutorial {
                 {
                     // Newer Method, but limited.
 
-                    var stateCode = "OH";
-                    var stateName = stateCode switch {
-                        "OH" => "Ohio",
-                        "IN" => "Indiana",
-                        "KY" => "Kentucky",
-                        _ => "Not Found"
-                    };
+                    //var stateCode = "OH";
+                    //var stateName = stateCode switch {
+                    //    "OH" => "Ohio",
+                    //    "IN" => "Indiana",
+                    //    "KY" => "Kentucky",
+                    //    _ => "Not Found"
+                    //};
 
                 }
 
             }
+
+            /////////////////////////
+            ///   Ternary         ///
+            /////////////////////////
+
+
+            {
+
+                var TrafficLight = "red";
+                var command = (TrafficLight == "red") ? "stop" : "go";
+                Console.WriteLine($"{TrafficLight} means {command}");
+
+            }
+
+            for(var i=1; i<31; i++) {
+                var x = "";
+                   x = (i % 15 == 0) ? "FIZZBUZZ" : x = (i % 5 == 0) ? "Buzz" : x = (i % 3 == 0) ? "Fizz" : i.ToString();
+                Console.WriteLine(x);
+            }
+
 
 
 
